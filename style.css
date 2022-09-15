@@ -13,14 +13,15 @@
   
   .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1 fr 1fr 1fr;
+    grid-template-rows: repeat(8, 100px);
     width: 900px;
     height: 800px;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    grid-row: auto;
+  }
+
+  main {
+    display: grid;
   }
   
   .gallery img {
@@ -29,39 +30,38 @@
   }
   
   #img-1 {
-    width: 450px;
-    height: 600px;
-    align-items: flex-start;
+    grid-row: 1/4;
+    grid-column: 1/1;
   }
   
   #img-2 {
-    width: 300px;
-    height: 600px;
+    grid-row: 1/3;
+    grid-column: 2/2;
+
   }
   
   #img-3 {
-    align-self: start;
+    grid-row: 1/6;
+    grid-column: 3/3;
   }
   
   #img-4 {
-    width: 450px;
-    height: 600px;
-    align-items: flex-start;
+    grid-row: 5/8;
+    grid-column: 1/1;
   }
   
   #img-5 {
-    width: 300px;
-    height: 300px;
-    align-items: flex-start;
+    grid-row: 3/6;
+    grid-column: 2/2;
   }
   
   #img-6 {
-    width: 300px;
-    height: 1200px;
+    grid-row: 7/9;
+    grid-column: 3/3;
   }
   
   #img-7 {
-    width: 300px;
-    height: 600px;
+    grid-row: 6/8;
+    grid-column: 2/2;
   }
   
