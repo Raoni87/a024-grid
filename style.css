@@ -5,12 +5,22 @@
   
   .nav-container {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (8, 100px);
+    justify-items: center;
   }
   
   .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 900px;
     height: 800px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    grid-row: auto;
   }
   
   .gallery img {
@@ -19,30 +29,39 @@
   }
   
   #img-1 {
-
+    width: 450px;
+    height: 600px;
+    align-items: flex-start;
   }
   
   #img-2 {
-
+    width: 300px;
+    height: 600px;
   }
   
   #img-3 {
-  
+    align-self: start;
   }
   
   #img-4 {
-
+    width: 450px;
+    height: 600px;
+    align-items: flex-start;
   }
   
   #img-5 {
-
+    width: 300px;
+    height: 300px;
+    align-items: flex-start;
   }
   
   #img-6 {
-
+    width: 300px;
+    height: 1200px;
   }
   
   #img-7 {
-
+    width: 300px;
+    height: 600px;
   }
   
